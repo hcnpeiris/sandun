@@ -1,0 +1,399 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+<body class="bg-black text-white">
+
+
+<header class="relative">
+  <!-- Desktop / Centered Navbar -->
+<nav
+  class="hidden md:flex fixed top-8 left-1/2 transform -translate-x-1/2 z-50 flex justify-center shadow-xl rounded-full items-center px-8 py-4 bg-zinc-900/50 backdrop-blur-md"
+>
+    <!-- Brand -->
+    <div class="text-2xl text-white font-semibold pr-16 whitespace-nowrap">
+      Sandun Nelumdeniya
+    </div>
+
+    <!-- Links -->
+    <div class="flex items-center space-x-16">
+      <a href="#about" class="text-indigo-500 font-semibold hover:text-indigo-400 transition-colors">About</a>
+      <a href="#experience" class="text-indigo-500 font-semibold hover:text-indigo-400 transition-colors">Experience</a>
+      <a href="#projects" class="text-indigo-500 font-semibold hover:text-indigo-400 transition-colors">Projects</a>
+      <a href="#contact" class="text-indigo-500 font-semibold hover:text-indigo-400 transition-colors">Contact</a>
+      <button class="px-6 py-2 whitespace-nowrap bg-white text-black font-semibold rounded-full hover:bg-zinc-50 hover:text-indigo-600 transition-colors">
+        Hire Me
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Navbar -->
+<nav class="md:hidden fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-11/12 bg-zinc-900/50 backdrop-blur-md shadow-xl rounded-full px-6 py-4">    <div class="flex justify-between items-center">
+      <!-- Brand -->
+      <div class="text-lg font-semibold text-white">
+        Sandun Nelumdeniya
+      </div>
+      
+      <!-- Hamburger button -->
+      <button id="menu-btn" class="text-white text-2xl focus:outline-none">&#9776;</button>
+    </div>
+
+    <!-- Dropdown menu -->
+    <ul id="menu" class="hidden flex-col mt-3 space-y-3">
+      <li>
+        <a href="#about" class="block text-white font-semibold bg-zinc-800 hover:bg-indigo-500 rounded-full px-6 py-2 text-center transition-colors">
+          About
+        </a>
+      </li>
+      <li>
+        <a href="#experience" class="block text-white font-semibold bg-zinc-800 hover:bg-indigo-500 rounded-full px-6 py-2 text-center transition-colors">
+          Experience
+        </a>
+      </li>
+      <li>
+        <a href="#projects" class="block text-white font-semibold bg-zinc-800 hover:bg-indigo-500 rounded-full px-6 py-2 text-center transition-colors">
+          Projects
+        </a>
+      </li>
+      <li>
+        <a href="#contact" class="block text-white font-semibold bg-zinc-800 hover:bg-indigo-500 rounded-full px-6 py-2 text-center transition-colors">
+          Contact
+        </a>
+      </li>
+      <li>
+        <button class="w-full px-6 py-2 bg-indigo-500 text-white font-semibold rounded-full hover:bg-white hover:text-indigo-600 transition-colors">
+          Hire Me
+        </button>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<script>
+  // Mobile dropdown toggle
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+  btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+</script>
+
+<main>
+
+    <section id="about" class="bg-zinc-900 text-white py-20 px-4 md:px-20">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+    <!-- Text Content -->
+    <div class="space-y-6 pt-16">
+      <h2 class="text-6xl font-bold">Sandun <br>Nelumdeniya</h2>
+      <p class=" text-zinc-300 leading-relaxed">
+        Hello! I’m Sandun Nelumdeniya — a <span class="text-indigo-500 font-semibold"> UI/UX designer</span> with a psychology edge. 
+        I craft digital experiences that are intuitive, human-centered, and visually engaging.
+      </p>
+            <!-- Quick Stats -->
+      <div class="flex flex-wrap gap-6 mt-6">
+        <div class="bg-zinc-800 p-4 rounded-lg shadow hover:shadow-xl transition">
+          <p class="text-2xl font-bold text-indigo-500">5+</p>
+          <p class="text-sm text-zinc-400">Years of Experience</p>
+        </div>
+        <div class="bg-zinc-800 p-4 rounded-lg shadow hover:shadow-xl transition">
+          <p class="text-2xl font-bold text-indigo-500">20+</p>
+          <p class="text-sm text-zinc-400">Projects Delivered</p>
+        </div>
+        <div class="bg-zinc-800 p-4 rounded-lg shadow hover:shadow-xl transition">
+          <p class="text-2xl font-bold text-indigo-500">10K+</p>
+          <p class="text-sm text-zinc-400">LinkedIn Audience</p>
+        </div>
+      </div>
+      <p class="text-xs text-zinc-300 leading-relaxed">
+        My work blends <span class="text-indigo-400 font-medium">creative design thinking</span> with <span class="text-indigo-400 font-medium">psychology insights</span>, delivering interfaces that are both beautiful and purposeful.
+        I study human behavior to design with empathy, understanding how users interact, decide, and feel while using digital products.
+      </p>
+
+
+
+      <!-- Skills / Tags -->
+      <div class="mt-6 flex flex-wrap gap-3">
+        <span class="bg-indigo-500 text-zinc-900 px-3 py-1 rounded-full text-sm font-semibold">UI Design</span>
+        <span class="bg-indigo-500 text-zinc-900 px-3 py-1 rounded-full text-sm font-semibold">UX Research</span>
+        <span class="bg-indigo-500 text-zinc-900 px-3 py-1 rounded-full text-sm font-semibold">Wireframing</span>
+        <span class="bg-indigo-500 text-zinc-900 px-3 py-1 rounded-full text-sm font-semibold">Prototyping</span>
+        <span class="bg-indigo-500 text-zinc-900 px-3 py-1 rounded-full text-sm font-semibold">Psychology</span>
+        <span class="bg-indigo-500 text-zinc-900 px-3 py-1 rounded-full text-sm font-semibold">Design Thinking</span>
+      </div>
+    </div>
+
+<!-- Illustration / Image -->
+<div class="flex justify-center md:justify-end mt-auto">
+  <div class="w-80 md:w-96 h-96 md:h-[28rem] rounded-2xl overflow-hidden shadow-2xl">
+    <img src="/img/IMG_5384.JPG" alt="Sandun Nelumdeniya" class="w-full h-full object-cover">
+  </div>
+</div>
+
+  </div>
+</section>
+<!-- SKILLS & SUMMARY -->
+<section id="summary" class="bg-zinc-900 text-white py-20 px-6 md:px-20">
+  <div class="max-w-6xl mx-auto space-y-12">
+
+    <!-- Section Title -->
+    <h2 class="text-4xl md:text-3xl font-bold text-white text-center md:text-left mb-6">
+      Design Focus & Skills
+    </h2>
+
+    <!-- Skills Grid -->
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="bg-zinc-50 p-6 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all">
+        <h3 class="text-indigo-400 font-semibold mb-2">User Research & UX Analysis</h3>
+        <p class="text-zinc-500 text-sm leading-relaxed">Understand users deeply, identify pain points, and uncover opportunities.</p>
+      </div>
+      <div class="bg-zinc-50 p-6 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all">
+        <h3 class="text-indigo-400 font-semibold mb-2">Wireframing, User Flows & Prototyping</h3>
+        <p class="text-zinc-500 text-sm leading-relaxed">Rapidly iterate designs to visualize interactions and flows.</p>
+      </div>
+      <div class="bg-zinc-50 p-6 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all">
+        <h3 class="text-indigo-400 font-semibold mb-2">High-Fidelity UI Design</h3>
+        <p class="text-zinc-500 text-sm leading-relaxed">Craft polished, pixel-perfect interfaces aligned with brand identity.</p>
+      </div>
+      <div class="bg-zinc-50 p-6 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all">
+        <h3 class="text-indigo-400 font-semibold mb-2">Usability Testing & Iteration</h3>
+        <p class="text-zinc-500 text-sm leading-relaxed">Test with real users and refine designs based on feedback.</p>
+      </div>
+      <div class="bg-zinc-50 p-6 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all">
+        <h3 class="text-indigo-400 font-semibold mb-2">Design Systems & Components</h3>
+        <p class="text-zinc-500 text-sm leading-relaxed">Maintain consistency and speed with reusable UI components.</p>
+      </div>
+      <div class="bg-zinc-50 p-6 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all">
+        <h3 class="text-indigo-400 font-semibold mb-2">Psychology-Driven Design Decisions</h3>
+        <p class="text-zinc-500 text-sm leading-relaxed">Leverage cognitive principles to improve user experience.</p>
+      </div>
+    </div>
+
+    <!-- Tools Highlight -->
+<div class="mt-10 text-center">
+  <h3 class="text-zinc-100 font-semibold text-lg mb-3">Tools I Use:</h3>
+  <div class="flex flex-wrap gap-3 justify-center">
+    <span class="bg-indigo-500 text-zinc-900 px-3 py-1 text-sm rounded-full font-semibold hover:bg-indigo-400 transition-colors">Figma</span>
+    <span class="bg-indigo-500 text-zinc-900 px-3 py-1 text-sm rounded-full font-semibold hover:bg-indigo-400 transition-colors">Adobe XD</span>
+    <span class="bg-indigo-500 text-zinc-900 px-3 py-1 text-sm rounded-full font-semibold hover:bg-indigo-400 transition-colors">Illustrator</span>
+    <span class="bg-indigo-500 text-zinc-900 px-3 py-1 text-sm rounded-full font-semibold hover:bg-indigo-400 transition-colors">Photoshop</span>
+  </div>
+</div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="bg-zinc-900 text-white py-20 px-6 md:px-40">
+    <h2 class="text-4xl md:text-3xl font-bold text-white text-center md:text-left mb-6">
+      Portfolio
+    </h2>
+  <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+  <!-- Project 1 -->
+  <article class="bg-zinc-900 p-6 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all">
+
+    <!-- Image Placeholder -->
+    <div class="relative mb-5 rounded-xl overflow-hidden">
+      <div
+        class="absolute inset-0 bg-cover bg-center scale-110 blur-xl opacity-40"
+        style="background-image: url('/img/Macbook\ Mockup\ Front\ View\ UV.png');">
+      </div>
+      <img
+        src="/img/Macbook Mockup Front View UV.png"
+        alt="GRID project preview"
+        class="relative z-10 w-full object-contain rounded-xl"
+      />
+    </div>
+
+    <h3 class="text-indigo-400 font-semibold text-xl mb-3">
+      GRID — Clothing E-commerce Website UI
+    </h3>
+
+    <p class="text-zinc-300 mb-3">
+      A clean and modern UI design concept for an online clothing brand,
+      focused on simplicity, visual balance, and smooth product discovery.
+    </p>
+
+    <ul class="list-disc list-inside text-zinc-400">
+      <li>Minimal layout and clear typography</li>
+      <li>User-friendly navigation</li>
+      <li>Optimized shopping flow</li>
+    </ul>
+  </article>
+
+  <!-- Project 2 -->
+  <article class="bg-zinc-900 p-6 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all">
+
+    <div class="relative mb-5 rounded-xl overflow-hidden">
+      <div
+        class="absolute inset-0 bg-cover bg-center scale-110 blur-xl opacity-40"
+        style="background-image: url('/img/Game\ Site\ Deo\ \(1\).png');">
+      </div>
+      <img
+        src="/img/Game Site Deo (1).png"
+        alt="MARIO project preview"
+        class="relative z-10 w-full object-contain rounded-xl"
+      />
+    </div>
+
+    <h3 class="text-indigo-400 font-semibold text-xl mb-3">
+      MARIO 1.2 — Game Platform Website
+    </h3>
+
+    <p class="text-zinc-300 mb-3">
+      A structured website concept for a gaming platform featuring skill
+      progression, missions, characters, and pricing tiers.
+    </p>
+
+    <ul class="list-disc list-inside text-zinc-400 mb-3">
+      <li>Bilingual layout (English / Korean)</li>
+      <li>Mission-based progression system</li>
+      <li>Clear hierarchy for features and updates</li>
+    </ul>
+
+    <p class="text-zinc-400 text-sm">
+      Role: UI/UX Design, Visual Concept, Layout Structuring<br>
+      Tools: Figma, Adobe XD, Illustrator<br>
+      Year: 2024
+    </p>
+  </article>
+
+  <!-- Project 3 -->
+  <article class="bg-zinc-900 p-6 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all">
+
+    <div class="relative mb-5 rounded-xl overflow-hidden">
+      <div
+        class="absolute inset-0 bg-cover bg-center scale-110 blur-xl opacity-40"
+        style="background-image: url('/img/project-placeholder.jpg');">
+      </div>
+      <img
+        src="/img/project-placeholder.jpg"
+        alt="Wildlife photography preview"
+        class="relative z-10 w-full object-contain rounded-xl"
+      />
+    </div>
+
+    <h3 class="text-indigo-400 font-semibold text-xl mb-3">
+      Wildlife Photography Portfolio
+    </h3>
+
+    <p class="text-zinc-300 mb-3">
+      A minimalist portfolio website concept for a wildlife photographer,
+      emphasizing strong imagery, typography, and storytelling.
+    </p>
+
+    <p class="text-zinc-400 text-sm">
+      Role: UI/UX Design, Visual Identity, Web Layout<br>
+      Tools: Figma, Adobe Photoshop, HTML/CSS<br>
+      Year: 2024
+    </p>
+  </article>
+
+  <!-- Project 4 -->
+  <article class="bg-zinc-900 p-6 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all">
+
+    <div class="relative mb-5 rounded-xl overflow-hidden">
+      <div
+        class="absolute inset-0 bg-cover bg-center scale-110 blur-xl opacity-40"
+        style="background-image: url('/img/project-placeholder.jpg');">
+      </div>
+      <img
+        src="/img/project-placeholder.jpg"
+        alt="Flower shop app preview"
+        class="relative z-10 w-full object-contain rounded-xl"
+      />
+    </div>
+
+    <h3 class="text-indigo-400 font-semibold text-xl mb-3">
+      Lee’s Flower Shop — Mobile App UI/UX
+    </h3>
+
+    <p class="text-zinc-300 mb-3">
+      A mobile e-commerce app for selling cacti and succulents, designed
+      with a calming, nature-inspired aesthetic.
+    </p>
+
+    <ul class="list-disc list-inside text-zinc-400">
+      <li>Clean product browsing experience</li>
+      <li>Efficient purchase flow</li>
+      <li>Nature-focused visual language</li>
+    </ul>
+  </article>
+
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="bg-zinc-900 text-white py-20 px-6 md:px-40">
+    <h2 class="text-4xl md:text-3xl font-bold text-white text-center md:text-left mb-6">
+      Experience
+    </h2>
+  <div class="space-y-8 md:space-y-12">
+    <article class="bg-zinc-800 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all">
+      <h3 class="text-indigo-400 font-semibold text-xl mb-1">UI/UX Designer — Freelance</h3>
+      <p class="text-zinc-400 mb-3">2021 – Present</p>
+      <ul class="list-disc list-inside text-zinc-300">
+        <li>Designed user-focused interfaces for mobile apps and web platforms</li>
+        <li>Conducted user research and UX analysis</li>
+        <li>Created wireframes, prototypes, and high-fidelity UI designs</li>
+        <li>Built design systems and reusable components</li>
+        <li>Collaborated with clients to define goals and optimize user experience</li>
+      </ul>
+    </article>
+
+    <article class="bg-zinc-800 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all">
+      <h3 class="text-indigo-400 font-semibold text-xl mb-1">Senior Digital Marketing Executive</h3>
+      <p class="text-zinc-400 mb-3">2022 – 2024</p>
+      <ul class="list-disc list-inside text-zinc-300">
+        <li>Managed social media campaigns and content strategy</li>
+        <li>Worked with paid and organic marketing channels</li>
+        <li>Optimized landing pages for conversion</li>
+        <li>Analyzed performance metrics and user behavior</li>
+      </ul>
+    </article>
+
+    <article class="bg-zinc-800 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all">
+      <h3 class="text-indigo-400 font-semibold text-xl mb-1">LinkedIn Content Creator</h3>
+      <p class="text-zinc-400 mb-3">2024</p>
+      <p class="text-zinc-300">Created educational content on design, productivity, psychology, and personal growth, generating earnings of 10K+ and building a strong personal brand.</p>
+    </article>
+
+    <article class="bg-zinc-800 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all">
+      <h3 class="text-indigo-400 font-semibold text-xl mb-1">Psychology Student</h3>
+      <p class="text-zinc-400 mb-3">2025 – Present</p>
+      <ul class="list-disc list-inside text-zinc-300">
+        <li>Decision-making patterns</li>
+        <li>User motivation and behavior</li>
+        <li>Cognitive biases</li>
+        <li>Human–Computer Interaction</li>
+        <li>Emotional design principles</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="bg-zinc-100 text-white py-10 px-6 md:px-20 text-center">
+  <h2 class="text-4xl md:text-5xl font-bold text-indigo-500 mb-6">Contact</h2>
+  <p class="text-zinc-300 mb-6">Interested in collaborating or discussing a project?</p>
+
+  <div class="space-y-">
+    <p class="text-zinc-300"><span class="font-semibold">Email:</span> yourname@email.com</p>
+    <p class="text-zinc-300"><span class="font-semibold">LinkedIn:</span> linkedin.com/in/yourprofile</p>
+    <p class="text-zinc-300"><span class="font-semibold">Portfolio:</span> yourwebsite.com</p>
+  </div>
+
+  <button class="mt-4 px-8 py-3 bg-indigo-500 text-zinc-900 font-semibold rounded-full hover:bg-indigo-400 transition-colors">
+    Let's Connect
+  </button>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2025 Sandun Nelumdeniya</p>
+</footer>
+
+</body>
